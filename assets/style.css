@@ -1,0 +1,157 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family: math;
+}
+
+.header {
+    background-image: linear-gradient(to right, #4242e9, rgb(72 166 220));
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 230px;
+}
+
+.content {
+    height: 70%;
+    height: 600px;
+    background-color: #f1ebeb;
+    position: relative;
+}
+
+.header__logo {}
+
+.header__heading {
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #214821;
+}
+
+.header__select {
+    width: 90%;
+}
+
+.header__select-list {
+    display: flex;
+    list-style: none;
+    justify-content: space-evenly;
+}
+
+.header__select-item {
+    border: 2px solid;
+    height: 34px;
+    line-height: 30px;
+    border-radius: 23px;
+    width: 100px;
+    text-align: center;
+    color: white;
+    position: relative;
+    cursor: pointer;
+}
+
+.header__select-item:hover {
+    background-color: #eac685;
+}
+
+.header__select-link {
+    color: white;
+    text-decoration: none;
+}
+
+.header__select-item:hover .header__select-slist {
+    display: block;
+}
+
+.header__select-slist {
+    display: none;
+    list-style: none;
+    width: 275px;
+    justify-content: space-evenly;
+    position: absolute;
+    left: -98px;
+    top: -60px;
+}
+
+.header__select-slink {
+    text-decoration: none;
+    color: white;
+}
+
+.header__select-items {
+    display: inline-block;
+    border: 2px solid;
+    border-radius: 71px;
+    background-color: #e78a4d;
+    width: 80px;
+    line-height: 50px;
+    height: 50px;
+    box-shadow: 1px 1px 4px white;
+}
+
+.content__frame {
+    position: absolute;
+    top: -40px;
+    width: 80%;
+    left: 160px;
+}
+
+.content-img {
+    width: 100%;
+    border: 10px solid white;
+    border-radius: 6px;
+    opacity: 0.9;
+}
+
+.content-note {
+    position: absolute;
+    top: 59%;
+    background-image: linear-gradient( to right, purple, #a259a2);
+    height: 271px;
+    left: 10px;
+    font-size: 2.3rem;
+    width: 230px;
+    text-align: center;
+    font-family: ;
+}
+
+.note-sub::before {
+    content: "";
+    position: absolute;
+    width: 52px;
+    height: 0px;
+    right: -189px;
+    top: 50px;
+    border-left: 0px solid transparent;
+    border-right: 118px solid transparent;
+    border-bottom: 222px solid #0b73a5;
+}
+
+.note-sub {
+    display: flex;
+    width: 170px;
+    flex-wrap: wrap;
+    margin-left: 50px;
+    margin-top: 40px;
+    color: #bebe2f;
+    margin-bottom: 30px;
+    font-family: math;
+    font-style: italic;
+    font-weight: 600;
+}
+
+.note-sub::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: -117px;
+    top: 0px;
+    border-left: 0px solid transparent;
+    border-right: 118px solid transparent;
+    border-bottom: 272px solid #a259a2;
+}
